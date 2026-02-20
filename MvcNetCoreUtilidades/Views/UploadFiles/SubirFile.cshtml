@@ -8,8 +8,11 @@
     <button class="btn btn-info">Subir fichero</button>
 </form>
 
-<img src='~/uploads/@ViewData["FILENAME"]' height="150px" width="150px"/>
+<img src='@ViewData["PATH"]' height="150px" width="150px"/>
 
 <h2 style="color: blue">
+    @ViewData["PATH"]
+</h2>
+<h2 style="color: red">
     @ViewData["MENSAJE"]
 </h2>
